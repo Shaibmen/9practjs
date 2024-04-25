@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books App</title>
+</head>
+<body>
+    <h1>Books App</h1>
+    <form id="addBookForm">
+      <input type="text" id="title" placeholder="Title">
+      <input type="text" id="author" placeholder="Author">
+      <input type="text" id="year" placeholder="Year">
+      <input type="text" id="genre" placeholder="Genre">
+      <button type="button" onclick="addBook(title.value, author.value, year.value, genre.value)">Add Book</button>
+    </form>
+    <form id="editBookForm">
+      <input type="text" id="editIndex" placeholder="Index">
+      <input type="text" id="editTitle" placeholder="Title">
+      <input type="text" id="editAuthor" placeholder="Author">
+      <input type="text" id="editYear" placeholder="Year">
+      <input type="text" id="editGenre" placeholder="Genre">
+      <button type="button" onclick="updateBook(editIndex.value, editTitle.value, editAuthor.value, editYear.value, editGenre.value)">Edit Book</button>
+    </form>
+    <form id="deleteBookForm">
+      <input type="text" id="deleteIndex" placeholder="Index">
+      <button type="button" onclick="deleteBook(deleteIndex.value)">Delete Book</button>
+    </form>
+    <ul id="booksList">
+      <!-- ТУТ БУДУТ ДОБАВЛЕНЫЕ ПРИКОЛЫ -->
+    </ul>
+    <script src="scripts.js"></script>
+  </body>
+</html>
